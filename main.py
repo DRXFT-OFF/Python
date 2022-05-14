@@ -6,12 +6,9 @@ def ex():           # creating a function to exclude incorrect input errors
         except ValueError:
             continue
     return money
-ans = input('Calculate the year/money: ').lower()       # we enter a value to understand what we want to find
-if ans != 'year' and ans != 'money':            # we write lines to exclude incorrect input
-    while ans != 'year' or ans != 'money':
-        ans = input('Invalid value. Re-enter: ').lower()
-        if ans == 'year' or ans == 'money':
-            break
+ans = input('Calculate the year/money: ').lower()       # we enter a value to understand what we want to find         
+while ans != 'year' and ans != 'money':      # we write lines to exclude incorrect input
+    ans = input('Invalid value. Re-enter: ').lower()
 if ans == 'year':       # we write lines of code to calculate the year by the amount of money
     try:
         money = int(input('Enter money: '))     # enter the amount of money to calculate the number of years
