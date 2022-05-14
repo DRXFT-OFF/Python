@@ -6,8 +6,7 @@ def ex():
         except ValueError:
             continue
     return money
-ans = input('Вычислить год/деньги ')
-ans = ans.lower()
+ans = input('Вычислить год/деньги ').lower()
 if ans != 'год' and ans != 'деньги':
     while ans != 'год' or ans != 'деньги':
         ans = input('Неверное значение. Введите заново: ').lower()
