@@ -7,8 +7,8 @@ def shopping(numb_ex, all_bill):       # функция хитрожоп-отл�
         numb_ex = int(input('Нельзя купить отрицательное кол-во. 0 - отмена '))
         if numb_ex == 0:
             break
-    all_bill += numb * prices[ans]      # и сама закупка продуктов
-    products[ans] += numb
+    all_bill += numb_ex * prices[ans]      # и сама закупка продуктов
+    products[ans] += numb_ex
     print(f'Чек: {all_bill}')
     print(f'Продукты: \n{products}')
     return all_bill
