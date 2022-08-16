@@ -108,6 +108,7 @@ namespace main
                     continue;
                 }
             }
+            Console.ReadLine();
         }
     }
 }
